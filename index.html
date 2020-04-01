@@ -1,14 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synixjs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SynixJS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Synixjs</h1>
+    <section class="hero is-medium">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-size-1">
+                    SynixJS
+                </h1>
+                <h2 class="subtitle is-size-5">
+                    <br> &rarr; A no-flag nodeJS CLI to make the use of command-line easy and uniform
+                </h2>
+                <h2 class="no is-size-4">
+                    No Frameworks. No Libraries. Pure nodeJS
+                </h2>
+                <br>
+                <h2 class="is-size-4 lin">
+                    <a href="https://synix-docs.netlify.com/" target="_blank" title="Documentation" class="lin"><span class="icon">
+                        <i class="fas fa-book"></i>
+                      </span></a> &nbsp; <a href="https://github.com/synixjs" target="_blank" title="Github" class="lin"><span class="icon">
+                        <i class="fas fa-external-link-alt"></i>
+                      </span></a>
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h1 class="title sub">Why?</h1>
+                <p class="content">The commands that we use are different in different operating systems and this creates a problem of either forgetting the commands or using commands from one OS in another OS</p>
+                <p class="content">NodeJS is a cross-platform software, so this tool would be cross-platform and we tried to write the most used commands and added some cool and helpful commands on top of it.</p>
+                <p class="content">Written in pure nodeJS, this tool will solve all kinds of command-line problems and helps you to reduce the number of commands you use.</p>
+            </div>
+        </div>
+        <br>
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h1 class="title sub">Installation</h1>
+                <pre class="snippet"><span class="is-size-5" id="cntx">npm install -g synix</span><button class="button cntx-trigger is-pulled-right is-small" data-clipboard-target="#cntx">copy</button></pre>
+                <p class="content">Not into package management stuff? download the zip <a href="#!">here</a></p>
+            </div>
+        </div>
+        <br>
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h1 class="title sub">Setup</h1>
+                <p class="content">Setting up synix is very easy we have a <code>init</code> command which sets everything for you based upon the text-editor prefrence</p>
+                <pre class="code">> sx init code # for visual studio code <br>> sx init subl # for sublime text <br>> sx init atom # for atom</pre>
+            </div>
+        </div>
+        <br>
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h1 class="title sub">Basic Usage</h1>
+                <p class="content">The commands of synix are pretty intutuive and some basic commands are:</p>
+                <ul>
+                    <li><code>sx ls</code> <b>:</b> Displays everything(even hidden folders) in the terminal/cmd</li>
+                    <li><code>sx touch [file name]</code> <b>:</b> Creates that file in that directory</li>
+                    <li><code>sx open [path/to/folder]</code> <b>:</b> Opens that specific folder in your preferred text editor as a project</li>
+                    <li><code>sx mkdir [folder name]</code> <b>:</b> Make the folder in that specific directory for you</li>
+                </ul>
+                <br>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h1 class="title sub">Documentation</h1>
+                <p class="content">A detailed documentation of all the commands along with it's usage is present <a href="https://synix-docs.netlify.com/" target="_blank">here</a></p>
+            </div>
+        </div>
+        <br>
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h1 class="title sub">People</h1>
+                <div id="members"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                Copyright © 2020-present | <a href="https://github.com/synixjs" target="_blank">SynixJS</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script src="./app.js"></script>
 </body>
-
-</html>
